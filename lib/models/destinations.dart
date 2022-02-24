@@ -1,23 +1,27 @@
-
-class Destination{
+class Destination {
   int? _id;
   String? _stationname;
   String? _train;
   String? _nextstop;
 
-  Destination(this._id,this._stationname,this._train,this._nextstop);
+  Destination(this._id, this._stationname, this._train, this._nextstop);
 
   int? get id => _id;
+
   String? get stationname => _stationname;
+
   String? get train => _train;
+
   String? get nextstop => _nextstop;
 
   set stationname(String? newname) {
     this._stationname = newname;
   }
+
   set train(String? newtrain) {
     this._train = newtrain;
   }
+
   set nextstop(String? newnextstop) {
     this._nextstop = newnextstop;
   }
@@ -40,7 +44,5 @@ class Destination{
     this._stationname = map['stationname'];
     this._train = map['train'];
     this._nextstop = map['nextstop'];
-
   }
-
 }
